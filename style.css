@@ -1,0 +1,157 @@
+:root {
+    --background-color: rgb(40, 34, 77);
+    --font-color: white;
+    --hover-color: rgb(67, 58, 122);
+    --link-active: rgb(104, 100, 20);
+    --text-background: rgba(92, 118, 185, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 5%;
+    position: relative;
+}
+
+.logo {
+    height: 60px;
+
+}
+
+.logo img {
+    height: 100%;
+}
+
+.fa-solid {
+    color: var(--font-color);
+    font-size: 36px;
+}
+
+/* NAVIGACE */
+nav {
+    position: absolute;
+    width: 100%;
+    background-color: var(--background-color);
+    left: 0;
+    top: 0px;
+    display: none;
+}
+
+nav ul {
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.link:hover {
+    background-color: var(--hover-color);
+    font-size: 1.3rem;
+}
+
+.active {
+    color: var(--link-active);
+    font-weight: bold;
+}
+
+.show-links {
+    display: block;
+    top: 80px;
+}
+
+/* MAIN */
+main {
+    height: 100vh;
+    background-image: url(images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.title {
+    font-size: 36px;
+    color: var(--font-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.text {
+    color: var(--font-color);
+    /* width: 98%; */
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--text-background);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.item {
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
+    min-width: 255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+input {
+    padding: 5px 10px;
+}
+
+input[type="submit"] {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.footer {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}

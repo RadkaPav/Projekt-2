@@ -1,0 +1,23 @@
+@media only screen and (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+
+    nav ul {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    nav {
+        width: 280px;
+        position: static;
+        display: block;
+    }
+
+    .text {
+        width: 80%;
+    }
+}
